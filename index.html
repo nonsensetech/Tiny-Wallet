@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyWallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.dart.js"></script>
+</head>
+<body>
+  <div class="login-page">
+    <div class="form-container">
+      <form class="login-form">
+        <textarea id="wallet-json" placeholder="Wallet JSON" required></textarea>
+        <input type="password" id="wallet-password" placeholder="Wallet Password" required>
+        <input type="submit" id="load-wallet-button" value="Import Wallet">
+        <p class="message">Don't have a wallet? <a href="#" id="show-create-wallet-form">Create one!</a></p>
+      </form>
+
+      <form class="create-form">
+        <!-- <input type="text" id="username" placeholder="Username" required> -->
+        <input type="password" id="create-wallet-password" placeholder="Wallet Password" required>
+        <input type="submit" id="create-wallet-button" value="Create Wallet">
+        <p class="message">Already have a wallet? <a href="#" id="show-login-form">Import it!</a></p>
+      </form>
+
+      <!-- HIDDEN -->
+      <div class="account-info">
+        <h2 id="address-bar">Address</h2>
+        <hr>
+        <h2>Balance</h2>
+        <p id="balance-display"></p>
+        <form id="balance-form">
+          <h4 id="balance"></h4> 
+          <p>Balance Currency</p>
+          <select id="balance-currency-select">
+            <option value="wei">wei</option>
+            <option value="kwei">kwei</option>
+            <option value="mwei">mwei</option>
+            <option value="gwei">gwei</option>
+            <option value="szabo">szabo</option>
+            <option value="finney">finney</option>
+            <option value="ether">ether</option>
+          </select>
+          <input type="submit" id="refresh-balance-button" value="Refresh">
+        </form>
+        <hr>
+        <h2>Send Ethereum</h2>
+        <form id="send-form">
+          <input type="text" id="send-address" placeholder="Send to..." required>
+          <input type="text" id="send-amount" placeholder="Amount to send..." required>
+          <input type="submit" id="send-button" value="Send">
+        </form>
+        <hr>
+        <h2>Export Wallet JSON</h2>
+        <form id="export-form">
+          <p>This can take a second...</p>
+          <input type="submit" id="export-json-button" value="Export JSON">
+          <textarea id="wallet-json-export" placeholder="Wallet JSON"></textarea>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

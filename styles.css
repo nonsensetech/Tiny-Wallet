@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  background: #34495e;
+  background: -webkit-linear-gradient(right, #34495e, #2c3e50);
+  background: -moz-linear-gradient(right, #34495e, #2c3e50);
+  background: linear-gradient(to left, #34495e, #2c3e50);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1;
+  background: #FFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-container input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #bdc3c7;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form-container h2, h4 {
+  font-family: "Roboto", sans-serif;
+  word-wrap: break-word;
+}
+
+.form-container textarea {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #bdc3c7;
+  resize: vertical;
+  width: 100%;
+  height: 100px;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form-container input[type=submit] {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #34495e;
+  border: 0;
+  padding: 15px;
+  color: #FFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container input[type=submit]:hover {
+  background: #7f8c8d;
+}
+
+.form-container select {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #34495e;
+  border: 0;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #FFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container select:hover {
+  background: #7f8c8d;
+}
+
+.form-container .message {
+  margin: 15px 0 0;
+  color: #7f8c8d;
+  font-size: 12px;
+}
+
+.form-container .message a {
+  color: #34495e;
+  text-decoration: none;
+}
+
+.account-info {
+  display: none;
+}
+
+.create-form {
+  display: none;
+}
+
+#wallet-json-export {
+  display: none;
+}
